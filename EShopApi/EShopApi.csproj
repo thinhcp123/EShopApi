@@ -45,7 +45,6 @@
     <Folder Include="Enum\" />
     <Folder Include="Extensions\" />
     <Folder Include="Helpers\" />
-    <Folder Include="Middleware\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
