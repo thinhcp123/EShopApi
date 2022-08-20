@@ -7,7 +7,46 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <Compile Remove="+ Helpers\**" />
+    <Compile Remove="+ Services\**" />
+    <Compile Remove="Enums\**" />
+    <Content Remove="+ Helpers\**" />
+    <Content Remove="+ Services\**" />
+    <Content Remove="Enums\**" />
+    <EmbeddedResource Remove="+ Helpers\**" />
+    <EmbeddedResource Remove="+ Services\**" />
+    <EmbeddedResource Remove="Enums\**" />
+    <None Remove="+ Helpers\**" />
+    <None Remove="+ Services\**" />
+    <None Remove="Enums\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="CloudinaryDotNet" Version="1.19.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Data\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Enum\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Middleware\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
