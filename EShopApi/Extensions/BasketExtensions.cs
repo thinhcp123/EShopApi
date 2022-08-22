@@ -1,5 +1,4 @@
-﻿using EShopApi.DTOs;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace EShopApi.Extensions
 {
@@ -19,7 +18,6 @@ namespace EShopApi.Extensions
                     Name = item.Product.Name,
                     Price = item.Product.Price,
                     PictureUrl = item.Product.PictureUrl,
-                    Brand = item.Product.Brand.Name,
                     Quantity = item.Quantity
                 }).ToList()
             };
